@@ -110,7 +110,7 @@
     "variables": {
         "functionAppIdentityUrl": "https://raw.githubusercontent.com/eamonoreilly/ManageAzureActiveDirectoryWithPowerShellFunction/master/nestedtemplates/functionAppIdentity.json",
         "functionAppUrl": "https://raw.githubusercontent.com/eamonoreilly/ManageAzureActiveDirectoryWithPowerShellFunction/master/nestedtemplates/functionapp.json",
-        "keyVaultUrl": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/201-key-vault-secret-create/azuredeploy.json",
+        "keyVaultUrl": "https://github.com/Azure/azure-quickstart-templates/blob/master/quickstarts/microsoft.keyvault/key-vault-secret-create/azuredeploy.json",
         "secrets": "[concat('{\"secrets\": [{\"secretName\":','\"',parameters('secretName'),'\"',',\"secretValue\":','\"',parameters('ADUserPassword'),'\"}]}')]",
         "secretsObject": "[json(variables('secrets'))]"
     },
